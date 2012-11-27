@@ -1,0 +1,25 @@
+package models;
+
+import java.io.Serializable;
+import javax.persistence.*;
+
+@Entity
+@Table(name="candidaturas")
+public class Candidatura implements Serializable {
+
+	@Transient
+	private static final long serialVersionUID = 1L;
+
+	@Id
+    @Column(name = "id")
+    @GeneratedValue(strategy=GenerationType.IDENTITY)        
+    int id;
+	
+	@ManyToOne  
+    @JoinColumn(name="candidaturaId")
+    Candidato candidatura;
+	
+	@ManyToOne  
+    @JoinColumn(name="vagaId")
+    Vaga vaga;
+}

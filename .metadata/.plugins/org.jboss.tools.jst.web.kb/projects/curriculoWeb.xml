@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects>
+  <project name="curriculoClient"/>
+ </depends-on-projects>
+ <used-by-projects/>
+ <paths>
+  <path value="/Applications/glassfish3/glassfish/modules/javax.security.auth.message.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/grizzly-comet.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/jaxb-osgi.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/org.eclipse.persistence.jpa.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/weld-osgi-bundle.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/woodstox-osgi.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/org.eclipse.persistence.asm.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/endorsed/jaxb-api-osgi.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/javax.servlet.jsp.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/org.eclipse.persistence.jpa.modelgen.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/jersey-core.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/bean-validator.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/javax.servlet.jsp.jstl.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/endorsed/webservices-api-osgi.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/jersey-json.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/jstl-impl.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl.jar/meta-inf/c-1_0-rt.tld" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl.jar/meta-inf/c-1_0.tld" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl.jar/meta-inf/c.tld" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl.jar/meta-inf/fmt-1_0-rt.tld" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl.jar/meta-inf/fmt-1_0.tld" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl.jar/meta-inf/fmt.tld" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl.jar/meta-inf/fn.tld" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl.jar/meta-inf/permittedtaglibs.tld" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl.jar/meta-inf/scriptfree.tld" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl.jar/meta-inf/sql-1_0-rt.tld" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl.jar/meta-inf/sql-1_0.tld" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl.jar/meta-inf/sql.tld" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl.jar/meta-inf/x-1_0-rt.tld" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl.jar/meta-inf/x-1_0.tld" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl.jar/meta-inf/x.tld" project="curriculoWeb"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="/Applications/glassfish3/mq/lib/jaxm-api.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/jsf-impl.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/html_basic.tld" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/jsf_core.tld" project="curriculoWeb"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/mojarra_ext.taglib.xml" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/mojarra_ext.tld" project="curriculoWeb"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/composite.taglib.xml" project="curriculoWeb"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/facelets_jsf_core.taglib.xml" project="curriculoWeb"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/html_basic.taglib.xml" project="curriculoWeb"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/jstl-core.taglib.xml" project="curriculoWeb"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/jstl-fn.taglib.xml" project="curriculoWeb"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/mojarra_ext.taglib.xml" project="curriculoWeb"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/ui.taglib.xml" project="curriculoWeb"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="/Applications/glassfish3/glassfish/modules/webservices.security.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/jersey-multipart.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/javax.ejb.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/grizzly-websockets.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/javax.mail.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/webservices-osgi.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/jersey-gf-statsproviders.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/jersey-client.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/webservices-connector.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/endorsed/javax.annotation.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/org.eclipse.persistence.core.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/javax.enterprise.deploy.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/javax.persistence.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/javax.transaction.jar"/>
+  <path value="/curriculoWeb/WebContent/WEB-INF/faces-config.xml">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/faces-config.xml" project="curriculoWeb"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="/Applications/glassfish3/glassfish/modules/javax.management.j2ee.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/org.eclipse.persistence.antlr.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/javax.resource.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/jersey-gf-server.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jersey-gf-server.jar/meta-inf/taglib.tld" project="curriculoWeb"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="/Applications/glassfish3/glassfish/modules/jsf-api.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/javax.jms.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/javax.security.jacc.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/glassfish-api.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/webservices-extra-jdk-packages.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/org.eclipse.persistence.oracle.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/javax.servlet.jar"/>
+ </paths>
+ <validation>
+  <el>
+   <linked-el length="47" name="%0" offset="2324" path="%1"/>
+   <linked-el length="20" name="%0" offset="2464" path="%1"/>
+   <linked-el length="23" name="%0" offset="2431" path="%1"/>
+   <linked-el length="40" name="%2" offset="1450" path="%3"/>
+   <linked-el length="40" name="%2" offset="461" path="%4"/>
+   <linked-el length="39" name="%2" offset="377" path="%4"/>
+   <linked-el length="30" name="%2" offset="838" path="%5"/>
+   <linked-el length="39" name="%2" offset="1937" path="%3"/>
+   <linked-el length="40" name="%2" offset="2580" path="%1"/>
+   <linked-el length="42" name="%2" offset="639" path="%4"/>
+   <linked-el length="43" name="%2" offset="2047" path="%3"/>
+   <linked-el length="40" name="%2" offset="1218" path="%3"/>
+   <linked-el length="32" name="%2" offset="1031" path="%5"/>
+   <linked-el length="33" name="%2" offset="1642" path="%3"/>
+   <linked-el length="40" name="%2" offset="1493" path="%1"/>
+   <linked-el length="33" name="%2" offset="2279" path="%5"/>
+   <linked-el length="40" name="%2" offset="2155" path="%3"/>
+   <linked-el length="30" name="%2" offset="934" path="%5"/>
+   <linked-el length="40" name="%2" offset="1471" path="%6"/>
+   <linked-el length="40" name="%2" offset="1137" path="%5"/>
+   <linked-el length="40" name="%2" offset="546" path="%4"/>
+   <linked-el length="40" name="%2" offset="1870" path="%5"/>
+   <linked-el length="33" name="%2" offset="1685" path="%1"/>
+   <linked-el length="38" name="%2" offset="2998" path="%6"/>
+   <linked-el length="40" name="%2" offset="1276" path="%1"/>
+   <linked-el length="42" name="%2" offset="692" path="%5"/>
+   <linked-el length="40" name="%2" offset="2087" path="%5"/>
+   <linked-el length="42" name="%2" offset="1254" path="%5"/>
+   <linked-el length="41" name="%2" offset="2112" path="%1"/>
+   <linked-el length="40" name="%2" offset="1254" path="%6"/>
+   <linked-el length="42" name="%2" offset="1997" path="%1"/>
+   <linked-el length="49" name="%2" offset="2236" path="%1"/>
+   <linked-el length="33" name="%2" offset="1663" path="%6"/>
+   <linked-el length="15" name="%7" offset="2177" path="%6"/>
+   <linked-el length="27" name="%7" offset="1689" path="%5"/>
+   <linked-el length="26" name="%7" offset="2720" path="%6"/>
+   <linked-el length="27" name="%7" offset="1077" path="%6"/>
+   <linked-el length="33" name="%7" offset="3082" path="%6"/>
+   <linked-el length="27" name="%7" offset="1084" path="%1"/>
+   <linked-el length="13" name="%7" offset="2915" path="%6"/>
+   <linked-el length="30" name="%7" offset="1949" path="%6"/>
+   <linked-el length="22" name="%7" offset="2441" path="%6"/>
+   <linked-el length="27" name="%7" offset="1041" path="%3"/>
+   <linked-el length="41" name="%8" offset="2112" path="%1"/>
+   <linked-el length="42" name="%8" offset="1997" path="%1"/>
+   <linked-el length="49" name="%8" offset="2236" path="%1"/>
+   <linked-el length="27" name="%9" offset="1689" path="%5"/>
+   <linked-el length="27" name="%9" offset="1077" path="%6"/>
+   <linked-el length="33" name="%9" offset="3082" path="%6"/>
+   <linked-el length="27" name="%9" offset="1084" path="%1"/>
+   <linked-el length="30" name="%9" offset="1949" path="%6"/>
+   <linked-el length="27" name="%9" offset="1041" path="%3"/>
+   <linked-el length="20" name="%10" offset="2464" path="%1"/>
+   <linked-el length="23" name="%10" offset="2431" path="%1"/>
+   <linked-el length="47" name="%11" offset="2324" path="%1"/>
+   <linked-el length="40" name="%12" offset="1450" path="%3"/>
+   <linked-el length="40" name="%12" offset="461" path="%4"/>
+   <linked-el length="39" name="%12" offset="377" path="%4"/>
+   <linked-el length="30" name="%12" offset="838" path="%5"/>
+   <linked-el length="39" name="%12" offset="1937" path="%3"/>
+   <linked-el length="40" name="%12" offset="2580" path="%1"/>
+   <linked-el length="42" name="%12" offset="639" path="%4"/>
+   <linked-el length="43" name="%12" offset="2047" path="%3"/>
+   <linked-el length="40" name="%12" offset="1218" path="%3"/>
+   <linked-el length="32" name="%12" offset="1031" path="%5"/>
+   <linked-el length="33" name="%12" offset="1642" path="%3"/>
+   <linked-el length="40" name="%12" offset="1493" path="%1"/>
+   <linked-el length="33" name="%12" offset="2279" path="%5"/>
+   <linked-el length="40" name="%12" offset="2155" path="%3"/>
+   <linked-el length="30" name="%12" offset="934" path="%5"/>
+   <linked-el length="40" name="%12" offset="1471" path="%6"/>
+   <linked-el length="40" name="%12" offset="1137" path="%5"/>
+   <linked-el length="40" name="%12" offset="546" path="%4"/>
+   <linked-el length="40" name="%12" offset="1870" path="%5"/>
+   <linked-el length="33" name="%12" offset="1685" path="%1"/>
+   <linked-el length="38" name="%12" offset="2998" path="%6"/>
+   <linked-el length="40" name="%12" offset="1276" path="%1"/>
+   <linked-el length="42" name="%12" offset="692" path="%5"/>
+   <linked-el length="40" name="%12" offset="2087" path="%5"/>
+   <linked-el length="42" name="%12" offset="1254" path="%5"/>
+   <linked-el length="41" name="%12" offset="2112" path="%1"/>
+   <linked-el length="40" name="%12" offset="1254" path="%6"/>
+   <linked-el length="42" name="%12" offset="1997" path="%1"/>
+   <linked-el length="49" name="%12" offset="2236" path="%1"/>
+   <linked-el length="33" name="%12" offset="1663" path="%6"/>
+   <linked-el length="15" name="%13" offset="2177" path="%6"/>
+   <linked-el length="26" name="%13" offset="2720" path="%6"/>
+   <linked-el length="13" name="%13" offset="2915" path="%6"/>
+   <linked-el length="22" name="%13" offset="2441" path="%6"/>
+   <linked-el length="22" name="%14" offset="2441" path="%6"/>
+   <linked-el length="26" name="%15" offset="2720" path="%6"/>
+   <linked-el length="43" name="%16" offset="2047" path="%3"/>
+   <linked-el length="40" name="%16" offset="461" path="%4"/>
+   <linked-el length="39" name="%16" offset="377" path="%4"/>
+   <linked-el length="40" name="%16" offset="546" path="%4"/>
+   <linked-el length="38" name="%16" offset="2998" path="%6"/>
+   <linked-el length="39" name="%16" offset="1937" path="%3"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="universidadeController" value="%0"/>
+  <alias path="/curriculoWeb/WebContent/gerCandidato.xhtml" value="%3"/>
+  <alias path="/curriculoWeb/WebContent/vagas.xhtml" value="%6"/>
+  <alias path="/curriculoClient/ejbModule/models/Curriculo.java" value="%8"/>
+  <alias path="/curriculoWeb/src/controllers/VagaController.java" value="%9"/>
+  <alias path="/curriculoWeb/WebContent/newCandidato.xhtml" value="%4"/>
+  <alias path="/curriculoWeb/WebContent/gerCurriculo.xhtml" value="%1"/>
+  <alias path="/curriculoWeb/src/controllers/CandidatoController.java" value="%12"/>
+  <alias path="/curriculoClient/ejbModule/models/Empresa.java" value="%14"/>
+  <alias path="candidatoController" value="%2"/>
+  <alias path="vagaController" value="%7"/>
+  <alias path="/curriculoClient/ejbModule/models/Universidade.java" value="%10"/>
+  <alias
+   path="/curriculoWeb/src/controllers/UniversidadeController.java" value="%11"/>
+  <alias path="/curriculoWeb/WebContent/index.xhtml" value="%5"/>
+  <alias path="/curriculoClient/ejbModule/models/Vaga.java" value="%13"/>
+  <alias path="/curriculoClient/ejbModule/models/Candidato.java" value="%16"/>
+  <alias path="/curriculoClient/ejbModule/models/AreaAtuacao.java" value="%15"/>
+  <alias path="%0" value="universidadeController"/>
+  <alias path="%4" value="/curriculoWeb/WebContent/newCandidato.xhtml"/>
+  <alias path="%3" value="/curriculoWeb/WebContent/gerCandidato.xhtml"/>
+  <alias path="%2" value="candidatoController"/>
+  <alias path="%1" value="/curriculoWeb/WebContent/gerCurriculo.xhtml"/>
+  <alias path="%7" value="vagaController"/>
+  <alias path="%16" value="/curriculoClient/ejbModule/models/Candidato.java"/>
+  <alias path="%8" value="/curriculoClient/ejbModule/models/Curriculo.java"/>
+  <alias path="%15" value="/curriculoClient/ejbModule/models/AreaAtuacao.java"/>
+  <alias path="%5" value="/curriculoWeb/WebContent/index.xhtml"/>
+  <alias path="%6" value="/curriculoWeb/WebContent/vagas.xhtml"/>
+  <alias path="%14" value="/curriculoClient/ejbModule/models/Empresa.java"/>
+  <alias path="%9" value="/curriculoWeb/src/controllers/VagaController.java"/>
+  <alias path="%13" value="/curriculoClient/ejbModule/models/Vaga.java"/>
+  <alias path="%12" value="/curriculoWeb/src/controllers/CandidatoController.java"/>
+  <alias path="%11" value="/curriculoWeb/src/controllers/UniversidadeController.java"/>
+  <alias path="%10" value="/curriculoClient/ejbModule/models/Universidade.java"/>
+ </aliases>
+ <includes/>
+</kb-project>

@@ -1,0 +1,52 @@
+package dao;
+
+import java.util.List;
+
+import javax.ejb.Remote;
+import javax.ejb.Stateless;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import models.AreaAtuacao;
+
+/**
+ * Session Bean implementation class AreaAtuacaoDao
+ */
+@Stateless
+@Remote(AreaAtuacaoRemote.class)
+public class AreaAtuacaoDao implements AreaAtuacaoRemote {
+	@PersistenceContext
+	private EntityManager em;
+
+	@Override
+	public void save(AreaAtuacao c) {
+		em.persist(c);
+	}
+
+	@Override
+	public void update(AreaAtuacao c) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(AreaAtuacao c) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public AreaAtuacao find(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<AreaAtuacao> list() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+    
+
+}

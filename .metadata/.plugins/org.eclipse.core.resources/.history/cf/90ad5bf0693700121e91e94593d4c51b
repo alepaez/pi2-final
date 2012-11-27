@@ -1,0 +1,15 @@
+package dao;
+
+import java.util.List;
+
+import models.Candidatura;
+
+public interface CandidaturaRemote {
+	public void save(Candidatura c);
+	public void update(Candidatura c);
+	public void delete(Candidatura c);
+	public Candidatura find(int id);
+	public Candidatura find(String login);
+	public List<Candidatura> list();
+
+}

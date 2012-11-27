@@ -1,0 +1,20 @@
+package dao;
+
+import javax.ejb.LocalBean;
+import javax.ejb.Stateless;
+
+/**
+ * Session Bean implementation class CandidaturaDao
+ */
+@Stateless
+@LocalBean
+public class CandidaturaDao implements CandidaturaRemote {
+
+    /**
+     * Default constructor. 
+     */
+    public CandidaturaDao() {
+        // TODO Auto-generated constructor stub
+    }
+
+}

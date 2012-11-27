@@ -1,0 +1,54 @@
+package controllers;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import models.Candidato;
+
+@ManagedBean
+@SessionScoped
+public class CandidatoController {
+	public Candidato candidato;
+	public String login;
+	public String senha;
+	
+	public String newCandidato(){
+		candidato = new Candidato();
+		return "gerCandidato";
+	}
+	
+	public Candidato getCandidato() {
+		return candidato;
+	}
+	public void setCandidato(Candidato candidato) {
+		this.candidato = candidato;
+	}
+	public String getLogin() {
+		return login;
+	}
+	public void setLogin(String login) {
+		this.login = login;
+	}
+	public String getSenha() {
+		return senha;
+	}
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+	
+	public void save(){
+		EntityManager em = getEntityManager();
+		em.persist(candidato);
+	}
+	
+	private EntityManager getEntityManager(){
+		EntityManagerFactory factory = Persistence.createEntityManagerFactory("jpa");
+		return factory.createEntityManager();
+	}
+
+	 
+
+}

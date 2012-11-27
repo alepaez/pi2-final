@@ -1,0 +1,16 @@
+package controllers;
+
+import javax.ejb.EJB;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+
+import dao.CandidaturaRemote;
+
+@ManagedBean
+@SessionScoped
+public class CandidaturaController {
+	@EJB
+	public CandidaturaRemote candidaturaDao;
+	
+	public candidatura
+}

@@ -1,0 +1,29 @@
+package controllers;
+
+import javax.ejb.EJB;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+
+import dao.CandidatoRemote;
+import models.Candidato;
+
+@ManagedBean
+@SessionScoped
+public class CandidatoController {
+	@EJB
+	public CandidatoRemote candidatoDao;
+	
+	public Candidato candidato;
+	
+	public String newCandidato(){
+		candidato = new Candidato();
+		return "newCandidato";
+	}
+	
+	public void createCandidato(){
+		candidatoDao.save(candidato);
+	}
+	
+	
+
+}

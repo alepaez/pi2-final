@@ -1,0 +1,20 @@
+package dao;
+
+import javax.ejb.LocalBean;
+import javax.ejb.Stateless;
+
+/**
+ * Session Bean implementation class AreaAtuacaoDao
+ */
+@Stateless
+@LocalBean
+public class AreaAtuacaoDao implements AreaAtuacaoRemote {
+
+    /**
+     * Default constructor. 
+     */
+    public AreaAtuacaoDao() {
+        // TODO Auto-generated constructor stub
+    }
+
+}

@@ -1,0 +1,6 @@
+INDEX VERSION 1.122+/Users/alezonez/Documents/workspace/pi2/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+1929541490.index
+2301013615.index
+525046344.index
+3789728533.index
+2759691741.index

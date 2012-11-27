@@ -1,0 +1,70 @@
+package dao;
+
+import java.util.List;
+
+import javax.ejb.Remote;
+import javax.ejb.Stateless;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.TypedQuery;
+
+import models.Candidato;
+import models.Candidatura;
+import models.Empresa;
+
+/**
+ * Session Bean implementation class CandidaturaDao
+ */
+@Stateless
+@Remote(CandidaturaRemote.class)
+public class CandidaturaDao implements CandidaturaRemote {
+	@PersistenceContext
+	private EntityManager em;
+
+	@Override
+	public void save(Candidatura c) {
+		em.persist(c);
+	}
+
+	@Override
+	public void update(Candidatura c) {
+		em.merge(c);
+	}
+
+	@Override
+	public void delete(Candidatura c) {
+		em.remove(em.merge(c));
+	}
+
+	@Override
+	public Candidatura find(int id) {
+		return em.find(Candidatura.class, id);
+	}
+
+	@Override
+	public Candidatura find(String login) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Candidatura> list() {
+		TypedQuery<Candidatura> query = em.createQuery("select cl from Candidatura cl", Candidatura.class); 
+		return query.getResultList();
+	}
+
+	@Override
+	public List<Candidatura> list(Empresa empresa) {
+		TypedQuery<Candidatura> query = em.createQuery("select cl from Candidatura cl where cl.id = '" + empresa.getId() + "'", Candidatura.class); 
+		return query.getResultList();
+	}
+
+	@Override
+	public List<Candidatura> list(Candidato candidato) {
+		TypedQuery<Candidatura> query = em.createQuery("select cl from Candidatura cl where cl.id = '" + candidato.getId() + "'", Candidatura.class); 
+		return query.getResultList();
+	}
+
+    
+
+}

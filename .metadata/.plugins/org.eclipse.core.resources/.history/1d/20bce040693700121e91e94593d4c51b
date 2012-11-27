@@ -1,0 +1,15 @@
+package dao;
+
+import javax.ejb.Remote;
+import javax.ejb.Stateless;
+
+/**
+ * Session Bean implementation class CandidaturaDao
+ */
+@Stateless
+@Remote(CandidaturaRemote.class)
+public class CandidaturaDao implements CandidaturaRemote {
+
+    
+
+}

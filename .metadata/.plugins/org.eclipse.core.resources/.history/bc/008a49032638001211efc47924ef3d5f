@@ -1,0 +1,71 @@
+package main;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+import java.util.Vector;
+
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.GroupLayout;
+import javax.swing.GroupLayout.Alignment;
+import javax.swing.JTable;
+import javax.swing.JButton;
+import javax.swing.LayoutStyle.ComponentPlacement;
+
+import dao.CurriculoRemote;
+import dao.VagaRemote;
+
+public class Curriculos extends JFrame {
+
+	private JPanel contentPane;
+	private JTable table;
+	/**
+	 * Create the frame.
+	 */
+	public Curriculos() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		Vector<Vector<String>> rowData = new Vector<Vector<String>>();
+		Vector<String> columnNames = new Vector<String>();
+		try {
+			InitialContext ic = new InitialContext();
+			CurriculoRemote curriculoDao = (CurriculoRemote)ic.lookup("java:global/curriculoEAR/curriculo/CurriculoDao");
+		} catch (NamingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		table = new JTable();
+		
+		JButton btnVoltar = new JButton("Voltar");
+		GroupLayout gl_contentPane = new GroupLayout(contentPane);
+		gl_contentPane.setHorizontalGroup(
+			gl_contentPane.createParallelGroup(Alignment.LEADING)
+				.addGroup(Alignment.TRAILING, gl_contentPane.createSequentialGroup()
+					.addContainerGap(298, Short.MAX_VALUE)
+					.addComponent(btnVoltar)
+					.addGap(25))
+				.addGroup(gl_contentPane.createSequentialGroup()
+					.addContainerGap()
+					.addComponent(table, GroupLayout.PREFERRED_SIZE, 423, GroupLayout.PREFERRED_SIZE)
+					.addContainerGap(11, Short.MAX_VALUE))
+		);
+		gl_contentPane.setVerticalGroup(
+			gl_contentPane.createParallelGroup(Alignment.LEADING)
+				.addGroup(gl_contentPane.createSequentialGroup()
+					.addContainerGap()
+					.addComponent(btnVoltar)
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addComponent(table, GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
+					.addGap(17))
+		);
+		contentPane.setLayout(gl_contentPane);
+	}
+
+}

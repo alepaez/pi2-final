@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Curriculos</title>
+        <h:outputStylesheet name="css/bootstrap.css"/>
+        <h:outputStylesheet name="css/bootstrap.min.css"/>        
+        <h:outputStylesheet name="css/bootstrap-responsive.css"/>        
+        <h:outputStylesheet name="css/bootstrap-responsive.min.css"/>
+    </h:head>
+    <h:body>
+        <div class="container">
+            <h:form>
+                <div class="navbar">
+                    <div class="container">
+                        <div class="navbar-inner">
+                            <h:link class="brand" outcome="/index.xhtml">CWeb</h:link>
+                            <ul class="nav">
+                                <li class="active">
+                                    <h:commandLink value="Vagas" action="#{vagaController.vagas()}"/>
+                                </li>
+                                <li>
+                                <h:commandLink value="Curriculo" action="#{candidatoController.editCurriculo()}"/>
+                                </li>
+                                <ul class="nav pull-right">
+                                   <li><h:commandLink value="Perfil" action="#{candidatoController.editCandidato()}"/></li>
+                                   <li class="divider-vertical"/>
+                                   <li><h:commandLink value="Deslogar" action="#{candidatoController.logout()}"/></li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+               </div>
+            </h:form>
+            <h:dataTable class="table table-stripped" var="vaga" value="#{vagaController.listaVagas}">
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="Cargo"/>
+                    </f:facet>
+                    <h:outputText value="#{vaga.cargo}"/>                    
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="Empresa"/>
+                    </f:facet>
+                    <h:outputText value="#{vaga.empresa.nome}"/>                    
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="Área de Atuação"/>
+                    </f:facet>
+                    <h:outputText value="#{vaga.areaAtuacao.nome}"/>                    
+                </h:column>
+                <h:column>
+                    <h:form>
+                    	<input type="hidden" name="vagaId" value="#{vaga.id}" />
+                    	<input type="hidden" name="candidatoId" value="#{candidatoController.candidato.id}" />
+                    	<h:commandLink action="#{vagaController.candidatar()}" value="Candidatar-se" class="btn" />
+                    </h:form>
+                                    
+                </h:column>
+            </h:dataTable>
+        </div>
+    </h:body>
+</html>

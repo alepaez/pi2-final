@@ -1,0 +1,55 @@
+package dao;
+
+import java.util.List;
+
+import javax.ejb.Remote;
+import javax.ejb.Stateless;
+
+import models.Candidatura;
+
+/**
+ * Session Bean implementation class CandidaturaDao
+ */
+@Stateless
+@Remote(CandidaturaRemote.class)
+public class CandidaturaDao implements CandidaturaRemote {
+
+	@Override
+	public void save(Candidatura c) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void update(Candidatura c) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(Candidatura c) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Candidatura find(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Candidatura find(String login) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Candidatura> list() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+    
+
+}

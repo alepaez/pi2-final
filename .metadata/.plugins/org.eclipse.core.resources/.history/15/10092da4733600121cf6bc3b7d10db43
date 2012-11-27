@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>       
+        <h:outputStylesheet name="css/bootstrap.css"/>
+        <h:outputStylesheet name="css/bootstrap.min.css"/>        
+        <h:outputStylesheet name="css/bootstrap-responsive.css"/>        
+        <h:outputStylesheet name="css/bootstrap-responsive.min.css"/>
+    </h:head>
+    <h:body>                
+        <div class="container">
+        <h:form>
+                <div class="navbar">
+                    <div class="container">
+                        <div class="navbar-inner">
+                            <h:link class="brand" outcome="/index.xhtml">CWeb</h:link>
+                            <ul class="nav">
+                                <li>
+                                    <h:commandLink value="Vagas" action="#{vagaController.vagas()}"/>
+                                </li>
+                                <li class="active">
+                                <h:commandLink value="Curriculo" action="#{candidatoController.editCurriculo()}"/>
+                                </li>
+                                <ul class="nav pull-right">
+                                   <li><h:commandLink value="Perfil" action="#{candidatoController.editCandidato()}"/></li>
+                                   <li class="divider-vertical"/>
+                                   <li><h:commandLink value="Deslogar" action="#{candidatoController.logout()}"/></li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+               </div>
+            </h:form>
+        <h:form>
+            <label>Objetivo Profissional</label>
+            <h:inputText value="#{candidatoController.candidato.curriculo.objProf}"/><br/>
+            <label>Idioma</label>
+            <h:inputText value="#{candidatoController.candidato.curriculo.idioma}"/><br/>
+            <label>Universidade</label>
+            <h:selectOneMenu value="#{candidatoController.candidato.curriculo.universidadeId}">
+                <f:selectItems value="#{universidadeController.listaUniversidades}" var="universidade"
+                               itemLabel="#{universidade.nome}" itemValue="#{universidade.id}"/>
+            </h:selectOneMenu><br/>
+            <h:commandLink class="btn" value="OK" action="#{candidatoController.saveCandidato()}"/><br/>
+        </h:form>
+        </div>
+    </h:body>
+</html>

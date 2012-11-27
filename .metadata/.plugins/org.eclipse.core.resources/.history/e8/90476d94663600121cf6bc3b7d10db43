@@ -1,0 +1,20 @@
+package dao;
+
+import javax.ejb.LocalBean;
+import javax.ejb.Stateless;
+
+/**
+ * Session Bean implementation class VagaDao
+ */
+@Stateless
+@LocalBean
+public class VagaDao implements VagaRemote {
+
+    /**
+     * Default constructor. 
+     */
+    public VagaDao() {
+        // TODO Auto-generated constructor stub
+    }
+
+}

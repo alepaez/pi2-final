@@ -1,0 +1,27 @@
+package controllers;
+
+import javax.ejb.EJB;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+import javax.faces.model.DataModel;
+import javax.faces.model.ListDataModel;
+
+import models.Vaga;
+
+import dao.VagaRemote;
+
+@ManagedBean
+@SessionScoped
+public class VagaController {
+	@EJB
+	public VagaRemote vagaDao;
+	
+	public DataModel<Vaga> getListaVagas(){
+		return new ListDataModel<Vaga>(vagaDao.list());
+	}
+	
+	public String vagas(){
+		return "vagas"; 
+	}
+
+}

@@ -1,0 +1,14 @@
+package controllers;
+
+import javax.ejb.EJB;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+
+import dao.CurriculoRemote;
+
+@ManagedBean
+@SessionScoped
+public class CurriculoController {
+	@EJB
+	public CurriculoRemote curriculoDao; 
+}

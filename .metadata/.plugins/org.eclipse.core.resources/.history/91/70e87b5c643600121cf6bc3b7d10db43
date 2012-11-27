@@ -1,0 +1,51 @@
+package dao;
+
+import java.util.List;
+
+import javax.ejb.Remote;
+import javax.ejb.Stateless;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.TypedQuery;
+
+import models.Candidato;
+import models.Curriculo;
+
+/**
+ * Session Bean implementation class CurriculoDao
+ */
+@Stateless
+@Remote(CurriculoRemote.class)
+public class CurriculoDao implements CurriculoRemote {
+	@PersistenceContext
+	private EntityManager em;
+
+	@Override
+	public void save(Curriculo c) {
+		em.persist(c);
+	}
+
+	@Override
+	public void update(Curriculo c) {
+		em.merge(c);
+	}
+
+	@Override
+	public void delete(Curriculo c) {
+		em.remove(em.merge(c));
+	}
+
+	@Override
+	public Curriculo find(int id) {
+		return em.find(Curriculo.class, id);
+	}
+
+	@Override
+	public List<Curriculo> list() {
+		TypedQuery<Curriculo> query = em.createQuery("select cl from Curriculo where cl", Curriculo.class); 
+		return query.getResultList();
+	}
+
+  
+
+}

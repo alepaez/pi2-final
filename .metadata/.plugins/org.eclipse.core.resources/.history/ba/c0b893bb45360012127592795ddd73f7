@@ -1,0 +1,23 @@
+package dao;
+
+import javax.ejb.LocalBean;
+import javax.ejb.Stateless;
+import javax.ejb.TransactionManagement;
+import javax.ejb.TransactionManagementType;
+
+/**
+ * Session Bean implementation class Candidato
+ */
+@Stateless
+@TransactionManagement(TransactionManagementType.BEAN)
+@LocalBean
+public class Candidato implements CandidatoRemote {
+
+    /**
+     * Default constructor. 
+     */
+    public Candidato() {
+        // TODO Auto-generated constructor stub
+    }
+
+}

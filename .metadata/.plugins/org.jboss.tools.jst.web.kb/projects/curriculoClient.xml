@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects>
+  <project name="curriculoWeb"/>
+ </used-by-projects>
+ <paths>
+  <path value="/Applications/glassfish3/glassfish/modules/javax.security.auth.message.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/grizzly-comet.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/jaxb-osgi.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/org.eclipse.persistence.jpa.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/weld-osgi-bundle.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/woodstox-osgi.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/org.eclipse.persistence.asm.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/endorsed/jaxb-api-osgi.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/javax.servlet.jsp.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/org.eclipse.persistence.jpa.modelgen.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/jersey-core.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/bean-validator.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/javax.servlet.jsp.jstl.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/endorsed/webservices-api-osgi.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/jersey-json.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/jstl-impl.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl.jar/meta-inf/c-1_0-rt.tld" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl.jar/meta-inf/c-1_0.tld" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl.jar/meta-inf/c.tld" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl.jar/meta-inf/fmt-1_0-rt.tld" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl.jar/meta-inf/fmt-1_0.tld" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl.jar/meta-inf/fmt.tld" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl.jar/meta-inf/fn.tld" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl.jar/meta-inf/permittedtaglibs.tld" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl.jar/meta-inf/scriptfree.tld" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl.jar/meta-inf/sql-1_0-rt.tld" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl.jar/meta-inf/sql-1_0.tld" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl.jar/meta-inf/sql.tld" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl.jar/meta-inf/x-1_0-rt.tld" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl.jar/meta-inf/x-1_0.tld" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-impl.jar/meta-inf/x.tld" project="curriculoWeb"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="/Applications/glassfish3/mq/lib/jaxm-api.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/jsf-impl.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/html_basic.tld" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/jsf_core.tld" project="curriculoWeb"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/mojarra_ext.taglib.xml" project="curriculoWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/mojarra_ext.tld" project="curriculoWeb"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/composite.taglib.xml" project="curriculoWeb"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/facelets_jsf_core.taglib.xml" project="curriculoWeb"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/html_basic.taglib.xml" project="curriculoWeb"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/jstl-core.taglib.xml" project="curriculoWeb"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/jstl-fn.taglib.xml" project="curriculoWeb"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/mojarra_ext.taglib.xml" project="curriculoWeb"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/ui.taglib.xml" project="curriculoWeb"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="/Applications/glassfish3/glassfish/modules/webservices.security.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/jersey-multipart.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/javax.ejb.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/grizzly-websockets.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/javax.mail.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/webservices-osgi.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/jersey-gf-statsproviders.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/jersey-client.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/webservices-connector.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/endorsed/javax.annotation.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/org.eclipse.persistence.core.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/javax.enterprise.deploy.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/javax.persistence.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/javax.transaction.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/javax.management.j2ee.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/org.eclipse.persistence.antlr.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/javax.resource.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/jersey-gf-server.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jersey-gf-server.jar/meta-inf/taglib.tld" project="curriculoWeb"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="/Applications/glassfish3/glassfish/modules/jsf-api.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/javax.jms.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/javax.security.jacc.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/glassfish-api.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/webservices-extra-jdk-packages.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/org.eclipse.persistence.oracle.jar"/>
+  <path value="/Applications/glassfish3/glassfish/modules/javax.servlet.jar"/>
+ </paths>
+ <validation>
+  <el/>
+ </validation>
+ <aliases/>
+ <includes/>
+</kb-project>

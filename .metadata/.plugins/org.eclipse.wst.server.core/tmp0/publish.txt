@@ -1,0 +1,4 @@
+#GlassFish 3
+#Tue Nov 27 13:54:20 BRST 2012
+org.eclipse.jst.jee.server\:curriculoEAR=/Applications/glassfish3/glassfish/domains/domain1/eclipseApps/curriculoEAR
+org.eclipse.jst.jee.server\:web=/Applications/glassfish3/glassfish/domains/domain1/eclipseApps/web

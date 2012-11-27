@@ -1,0 +1,53 @@
+package dao;
+
+import java.util.List;
+
+import javax.ejb.LocalBean;
+import javax.ejb.Remote;
+import javax.ejb.Stateless;
+import javax.ejb.TransactionManagement;
+import javax.ejb.TransactionManagementType;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.TypedQuery;
+
+import models.Candidato;
+
+/**
+ * Session Bean implementation class Candidato
+ */
+@Stateless
+@Remote(CandidatoRemote.class)
+public class CandidatoDao implements CandidatoRemote {
+	@PersistenceContext
+	private EntityManager em;
+	
+	@Override
+	public void save(Candidato c) {
+		em.persist(c);
+	}
+ 
+	@Override
+	public void update(Candidato c) {
+		em.merge(c);
+	}
+
+	@Override
+	public void delete(Candidato c) {
+		em.remove(em.merge(c));
+	}
+
+	@Override
+	public Candidato find(int id) {
+		return em.find(Candidato.class, id);
+	}
+
+	@Override
+	public List<Candidato> list() {
+		TypedQuery<Candidato> query = em.createQuery("select cl from Candidato where cl", Candidato.class); 
+		return query.getResultList();
+	}
+
+    
+
+}

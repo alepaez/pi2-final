@@ -1,0 +1,100 @@
+package main;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.GroupLayout;
+import javax.swing.GroupLayout.Alignment;
+import javax.swing.JButton;
+import javax.swing.LayoutStyle.ComponentPlacement;
+
+import models.Empresa;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class Principal extends JFrame {
+
+	private JPanel contentPane;
+	private Empresa empresa;
+
+	/**
+	 * Launch the application.
+	 */
+	/**
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Principal frame = new Principal();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+	*/
+
+	/**
+	 * Create the frame.
+	 */
+	public Principal(Empresa empresa) {
+		this.empresa = empresa;
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 425, 121);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		
+		JButton btnDeslogar = new JButton("Deslogar");
+		btnDeslogar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				dispose();
+				new Main().setVisible(true);
+			}
+		});
+		
+		JButton btnPerfil = new JButton("Perfil");
+		
+		JButton btnCurriculos = new JButton("Curriculos");
+		
+		JButton btnVagas = new JButton("Vagas");
+		
+		JButton btnCandidaturas = new JButton("Candidaturas");
+		GroupLayout gl_contentPane = new GroupLayout(contentPane);
+		gl_contentPane.setHorizontalGroup(
+			gl_contentPane.createParallelGroup(Alignment.LEADING)
+				.addGroup(Alignment.TRAILING, gl_contentPane.createSequentialGroup()
+					.addContainerGap(317, Short.MAX_VALUE)
+					.addComponent(btnDeslogar)
+					.addContainerGap())
+				.addGroup(gl_contentPane.createSequentialGroup()
+					.addContainerGap()
+					.addComponent(btnPerfil)
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addComponent(btnVagas)
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addComponent(btnCurriculos)
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addComponent(btnCandidaturas)
+					.addContainerGap(33, Short.MAX_VALUE))
+		);
+		gl_contentPane.setVerticalGroup(
+			gl_contentPane.createParallelGroup(Alignment.LEADING)
+				.addGroup(gl_contentPane.createSequentialGroup()
+					.addContainerGap()
+					.addComponent(btnDeslogar)
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
+						.addComponent(btnPerfil)
+						.addComponent(btnVagas)
+						.addComponent(btnCurriculos)
+						.addComponent(btnCandidaturas))
+					.addContainerGap(198, Short.MAX_VALUE))
+		);
+		contentPane.setLayout(gl_contentPane);
+	}
+}
