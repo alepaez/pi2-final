@@ -8,12 +8,12 @@
 	</section>
 	<section name="org.eclipse.wb.internal.core.model.util.RenameConvertSupport$RenameDialog">
 	</section>
+	<section name="org.eclipse.wb.internal.core.editor.actions.assistant.LayoutAssistantWindow">
+	</section>
 	<section name="org.eclipse.wb.internal.core.model.property.editor.string.StringPropertyDialog">
 		<item value="310" key="height"/>
 		<item value="504" key="width"/>
 		<item value="352" key="y"/>
 		<item value="708" key="x"/>
-	</section>
-	<section name="org.eclipse.wb.internal.core.editor.actions.assistant.LayoutAssistantWindow">
 	</section>
 </section>
